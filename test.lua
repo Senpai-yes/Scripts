@@ -1,1 +1,1 @@
-print(getgenv().wait)
+print(noob)
