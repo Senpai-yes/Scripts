@@ -7,6 +7,15 @@ skip = false
 zigger = false
 local whore = Vector3.new(0, -40000, 0)
 local bodyvelocityenabled = true -- set this to false if you are getting kicked
+
+local function JINKILL()
+    for i,v in pairs(game:GetService("Workspace").npc:GetChildren()) do
+        if v.Name == "npc1" and v:FindFirstChild("HumanoidRootPart") and v.HumanoidRootPart.Position.Y > -1000 then
+                    v.Head:Destroy()
+        end
+    end
+end
+
 local Imput = game:GetService("UserInputService")
 local http_request = http_request;
 if syn then
@@ -112,17 +121,6 @@ Text = "Senpai.#4900";
 Icon = "";
 Duration = 30;
 })
-	for i,v in pairs(game.workspace.GLOBALTIME:GetChildren()) do
-	    if v.ClassName == "Model" then 
-	        if table.find(ignore, v.Name) then
-	            zigger = true
-	        elseif not table.find(ignore, v.Name) then
-                zigger = false
-                else 
-                    zigger = true
-	        end
-	    end
-        end
 local plr = game.Players.LocalPlayer
 if _G.monkey == true then
 	local nigger = {}
