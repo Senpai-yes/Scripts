@@ -13,8 +13,7 @@ local function JINKILL()
         if v.Name == "npc1" and v:FindFirstChild("HumanoidRootPart") and v.HumanoidRootPart.Position.Y > -1000 then
 			repeat wait()
                 pcall(function()
-                    v.Humanoid.Health = 0
-                    toTarget(game:GetService("Players").LocalPlayer.Character:WaitForChild("HumanoidRootPart").Position,v.Head.Position,CFrame.new(v.Head.Position))
+                    v.Head:Destroy()
 				end)
             until v.Humanoid.Health == 0 or not v
         end
