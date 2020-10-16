@@ -7,15 +7,6 @@ skip = false
 zigger = false
 local whore = Vector3.new(0, -40000, 0)
 local bodyvelocityenabled = true -- set this to false if you are getting kicked
-
-local function JINKILL()
-    for i,v in pairs(game:GetService("Workspace").npc:GetChildren()) do
-        if v.Name == "npc1" and v:FindFirstChild("HumanoidRootPart") and v.HumanoidRootPart.Position.Y > -1000 then
-                    v.Head:Destroy()
-        end
-    end
-end
-
 local Imput = game:GetService("UserInputService")
 local http_request = http_request;
 if syn then
