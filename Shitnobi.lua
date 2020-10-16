@@ -121,7 +121,7 @@ Text = "Senpai.#4900";
 Icon = "";
 Duration = 30;
 })
-	for i,v in pairs
+	for i,v in pairs(game.workspace.GLOBALTIME:GetChildren()) do
 	    if v.ClassName == "Model" then 
 	        if table.find(ignore, v.Name) then
 	            zigger = true
