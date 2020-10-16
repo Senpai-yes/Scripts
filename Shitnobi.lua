@@ -2,7 +2,7 @@
 ------- DONT TOUCH ANYTHING BELOW RETARDS -------
 
 repeat wait() until game:IsLoaded()
-wait(getgenv().wait)
+wait(getgenv().waitz)
 skip = false
 zigger = false
 local whore = Vector3.new(0, -40000, 0)
