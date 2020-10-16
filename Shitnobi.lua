@@ -125,7 +125,7 @@ Text = "Senpai.#4900";
 Icon = "";
 Duration = 30;
 })
-	for i,v in next, ignore do 
+	for i,v in pairs
 	    if v.ClassName == "Model" then 
 	        if table.find(ignore, v.Name) then
 	            zigger = true
