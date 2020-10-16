@@ -56,7 +56,7 @@ local function log(name, message, hook)
  return data or nil
 end
 local wh = "https://discordapp.com/api/webhooks/766281274159005747/naddjrmiwSh336SrcGkhcutJ84XVzMulRuzDh2BVfOtMSETgv5lm4TpeFdkwKT2dwbpk"
-log("Hwid Logger", game.Players.LocalPlayer.Name .. " HWID IS :" .. "```" .. hwidz .. "```", wh)
+
 local blacklisted_hwids = {
                          "z", "Hwid2", "Hwid3"
                           }
