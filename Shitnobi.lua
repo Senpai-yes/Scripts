@@ -2,7 +2,7 @@
 ------- DONT TOUCH ANYTHING BELOW RETARDS -------
 
 repeat wait() until game:IsLoaded()
-wait(waitz)
+wait(getgenv().wait)
 skip = false
 zigger = false
 local whore = Vector3.new(0, -40000, 0)
@@ -124,9 +124,9 @@ Duration = 30;
 
 	for i,v in pairs(game.workspace.GLOBALTIME:GetChildren()) do
 	    if v.ClassName == "Model" then 
-	        if table.find(ignore, v.Name) then
+	        if table.find(getgenv().ignore, v.Name) then
 	            zigger = true
-	        elseif not table.find(ignore, v.Name) then
+	        elseif not table.find(getgenv().ignore, v.Name) then
                 zigger = false
                 else 
                     zigger = true
