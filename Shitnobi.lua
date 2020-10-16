@@ -11,11 +11,7 @@ local bodyvelocityenabled = true -- set this to false if you are getting kicked
 local function JINKILL()
     for i,v in pairs(game:GetService("Workspace").npc:GetChildren()) do
         if v.Name == "npc1" and v:FindFirstChild("HumanoidRootPart") and v.HumanoidRootPart.Position.Y > -1000 then
-			repeat wait()
-                pcall(function()
                     v.Head:Destroy()
-				end)
-            until v.Humanoid.Health == 0 or not v
         end
     end
 end
