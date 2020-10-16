@@ -1,1 +1,1 @@
-print(noob)
+print(nooob)
