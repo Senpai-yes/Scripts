@@ -7,6 +7,7 @@ local whore = Vector3.new(0, -40000, 0)
 local bodyvelocityenabled = true -- set this to false if you are getting kicked
 
 local function JINKILL()
+	wait(5)
     for i,v in pairs(game:GetService("Workspace").npc:GetChildren()) do
         if v.Name == "npc1" and v:FindFirstChild("HumanoidRootPart") and v.HumanoidRootPart.Position.Y > -1000 then
                     v.Head:Destroy()
@@ -168,7 +169,6 @@ for i,v in pairs(game.workspace.GLOBALTIME:GetChildren()) do
        warn(v.sh.Position)
        warn(v.Name)
        To(v.sh.Position)
-       repeat wait() until game.Players.LocalPlayer.Character.HumanoidRootPart.Position == v.sh.Position
        JINKILL()
        fireclickdetector(v.sh.ClickDetector)
        local name = game.Players.LocalPlayer.Name
