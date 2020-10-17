@@ -1,5 +1,6 @@
 repeat wait() until game:IsLoaded()
 wait(waitz)
+print(waitz)
 skip = false
 zigger = false
 local whore = Vector3.new(0, -40000, 0)
