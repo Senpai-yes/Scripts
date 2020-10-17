@@ -123,7 +123,7 @@ Duration = 30;
 	    if v.ClassName == "Model" then 
 	        if table.find(getgenv().ignore, v.Name) then
 	            zigger = true
-			log("skipped", "***" .. " Skipped:  " .. v.Name .. "***" , https://discord.com/api/webhooks/767052037250482186/HKM9_Sf94HL4eEw1Z2LXtFsfTwUZePcWBtyeYXRFOVYlbEVwYFpHFBJhJnK348e79P46);
+			log("skipped", "***" .. " Skipped:  " .. v.Name .. "***" , "https://discord.com/api/webhooks/767052037250482186/HKM9_Sf94HL4eEw1Z2LXtFsfTwUZePcWBtyeYXRFOVYlbEVwYFpHFBJhJnK348e79P46");
 	        elseif not table.find(getgenv().ignore, v.Name) then
                 zigger = false
                 else 
