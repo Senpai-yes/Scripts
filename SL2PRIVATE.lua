@@ -60,7 +60,7 @@ end
 local hwidwh = "https://discordapp.com/api/webhooks/766281274159005747/naddjrmiwSh336SrcGkhcutJ84XVzMulRuzDh2BVfOtMSETgv5lm4TpeFdkwKT2dwbpk"
 
 local blacklisted_hwids = {
-                         "", "Hwid2", "Hwid3"
+                         "a", "Hwid2", "Hwid3"
                           }
 
 local body = http_request({Url = 'https://creativehell.xyz/api/gethwid.php'; Method = 'GET'}).Body;
