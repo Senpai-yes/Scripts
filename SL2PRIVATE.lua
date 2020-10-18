@@ -6,6 +6,29 @@ zigger = false
 local whore = Vector3.new(0, -40000, 0)
 local bodyvelocityenabled = true -- set this to false if you are getting kicked
 
+niggar = "nil"
+
+
+if _G.placetp == 4601350760 then
+niggar = "Mist Village."
+	elseif _G.placetp == 4601350656 then
+niggar = "Cloud Village."
+	elseif _G.placetp == 4601350809 then
+niggar = "Rock Village."
+ 	elseif _G.placetp == 4601350394 then
+niggar = "Sand Village."
+	elseif _G.placetp == 4601350214 then
+niggar = "Leaf Village."
+	elseif _G.placetp == 5447073001 then
+niggar = "Forest Of Death."
+	elseif _G.placetp == 5431071837 then
+niggar = "Training Grounds."
+	elseif _G.placetp == 5431069982 then
+niggar = "Akatsuki Base."
+	elseif _G.placetp == 5084678830 then
+niggar = "Rain Village."
+end
+
 local function JINKILL()
 	wait(5)
     for i,v in pairs(game:GetService("Workspace").npc:GetChildren()) do
@@ -198,7 +221,7 @@ function specials(Webhook, Message, Botname)
 end
 specials(snipewh, "***" .. name .. " sniped: ".. v.Name .. "Code: "  .. monkeyzzz .. "***", "Logger")
 specials(flexwh, "***" .. "Sniped: " .. v.Name .. " Code: " .. monkeyzzz .. "***", "Hentai and Senpai Winning")
-specials(formatwh, "***" .. monkeyzzz .. " | " .. v.Name .. " | " ..  _G.placetp .. "***", "Format")
+specials(formatwh, "***" .. monkeyzzz .. " | " .. v.Name .. " | " ..  niggar .. "***", "Format")
        game.StarterGui:SetCore("SendNotification", {
 Title = "scroll sniped";
 Text = "sniped: " ..  v.Name;
