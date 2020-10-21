@@ -166,7 +166,7 @@ Text = "Senpai.#4900";
 Icon = "";
 Duration = 30;
 })
-
+--[[
 	for i,v in pairs(game.workspace.GLOBALTIME:GetChildren()) do
 	    if v.ClassName == "Model" then 
 	        if table.find(getgenv().ignore, v.Name) then
@@ -178,7 +178,7 @@ Duration = 30;
 	        end
 	    end
         end
-
+--]]
 local plr = game.Players.LocalPlayer
 if Settings.Skippingss == true then
 	local nigger = {}
