@@ -53,8 +53,8 @@ niggar = "Rain Village."
 end
 
 local function JINKILL()
-	wait(5)
     for i,v in pairs(game:GetService("Workspace").npc:GetChildren()) do
+			wait(5)
         if v.Name == "npc1" and v:FindFirstChild("HumanoidRootPart") and v.HumanoidRootPart.Position.Y > -1000 then
                     v.Head:Destroy()
         end
