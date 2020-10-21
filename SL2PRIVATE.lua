@@ -180,7 +180,7 @@ Duration = 30;
         end
 
 local plr = game.Players.LocalPlayer
-if _G.monkey == true then
+if Settings.Skippingss == true then
 	local nigger = {}
 	for i,v in pairs(game.Players.LocalPlayer.statz.unlocked:GetChildren()) do
 		if v.ClassName == "StringValue" then
