@@ -1,32 +1,40 @@
 repeat wait() until game:IsLoaded()
 local Namez = "SexHubSettings.sex"
 Settings = game:service'HttpService':JSONDecode(readfile(Namez))
-
+game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
+if State == Enum.TeleportState.Started then
+syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Senpai-yes/Scripts/main/SL2PRIVATE.lua'))();")
+end
+end)
+local TeleportService = game:GetService("TeleportService")
+game.Players.PlayerRemoving:Connect(function(xd)
+if xd == game.Players.LocalPlayer then
+TeleportService:Teleport(game.PlaceId)
+end
+end)
 wait(Settings.Wait)
 print(Settings.Wait)
 skip = false
 zigger = false
 Tp2 = "nil"
-if Settings.PlaceTp == "nil" then 
-error()
-	elseif Settings.PlaceTp == "mist" then
-Tp2 = "4601350760"
+if Settings.PlaceTp == "mist" then 
+Tp2 = 4601350760
 	elseif Settings.PlaceTp == "cloud" then
-Tp2 = "4601350656"
+Tp2 = 4601350656
 	elseif Settings.PlaceTp == "rock" then
-Tp2 = "4601350809"
+Tp2 = 4601350809
 	elseif Settings.PlaceTp == "sand" then
-Tp2 = "4601350394"
+Tp2 = 4601350394
 	elseif Settings.PlaceTp == "leaf" then
-Tp2 = "4601350214" 
+Tp2 = 4601350214
 	elseif Settings.PlaceTp == "forest" then
-Tp2 = "5447073001"
+Tp2 = 5447073001
 	elseif Settings.PlaceTp == "training" then
-Tp2 = "5431071837"
+Tp2 = 5431071837
 	elseif Settings.PlaceTp == "akat" then
-Tp2 = "5431069982"
+Tp2 = 5431069982
 	elseif Settings.PlaceTp == "rain" then
-Tp2 = "5084678830"
+Tp2 = 5084678830
 end
 local whore = Vector3.new(0, -40000, 0)
 local bodyvelocityenabled = true -- set this to false if you are getting kicked
