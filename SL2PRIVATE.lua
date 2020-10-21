@@ -6,29 +6,49 @@ wait(Settings.Wait)
 print(Settings.Wait)
 skip = false
 zigger = false
+Tp2 = "nil"
+if Settings.PlaceTp == "nil" then 
+error()
+	elseif Settings.PlaceTp == "mist" then
+Tp2 = "4601350760"
+	elseif Settings.PlaceTp == "cloud" then
+Tp2 = "4601350656"
+	elseif Settings.PlaceTp == "rock" then
+Tp2 = "4601350809"
+	elseif Settings.PlaceTp == "sand" then
+Tp2 = "4601350394"
+	elseif Settings.PlaceTp == "leaf" then
+Tp2 = "4601350214" 
+	elseif Settings.PlaceTp == "forest" then
+Tp2 = "5447073001"
+	elseif Settings.PlaceTp == "training" then
+Tp2 = "5431071837"
+	elseif Settings.PlaceTp == "akat" then
+Tp2 = "5431069982"
+	elseif Settings.PlaceTp == "rain" then
+Tp2 = "5084678830"
 local whore = Vector3.new(0, -40000, 0)
 local bodyvelocityenabled = true -- set this to false if you are getting kicked
-
 niggar = "nil"
 
 
-if _G.placetp == 4601350760 then
+if Tp2 == 4601350760 then
 niggar = "Mist Village."
-	elseif _G.placetp == 4601350656 then
+	elseif Tp2 == 4601350656 then
 niggar = "Cloud Village."
-	elseif _G.placetp == 4601350809 then
+	elseif Tp2 == 4601350809 then
 niggar = "Rock Village."
- 	elseif _G.placetp == 4601350394 then
+ 	elseif Tp2 == 4601350394 then
 niggar = "Sand Village."
-	elseif _G.placetp == 4601350214 then
+	elseif Tp2 == 4601350214 then
 niggar = "Leaf Village."
-	elseif _G.placetp == 5447073001 then
+	elseif Tp2 == 5447073001 then
 niggar = "Forest Of Death."
-	elseif _G.placetp == 5431071837 then
+	elseif Tp2 == 5431071837 then
 niggar = "Training Grounds."
-	elseif _G.placetp == 5431069982 then
+	elseif Tp2 == 5431069982 then
 niggar = "Akatsuki Base."
-	elseif _G.placetp == 5084678830 then
+	elseif Tp2 == 5084678830 then
 niggar = "Rain Village."
 end
 
@@ -185,8 +205,8 @@ for i=1, 5 do
     wait()
 for i,v in pairs(game.workspace.GLOBALTIME:GetChildren()) do
     if not game.workspace.GLOBALTIME:FindFirstChildOfClass("Model") or skip or zigger then
-        game.Players.LocalPlayer:WaitForChild("startevent"):FireServer("createprivateserver", Settings.PlaceTp)
-     game.Players.LocalPlayer:WaitForChild("startevent"):FireServer("createprivateserver", Settings.PlaceTp)
+        game.Players.LocalPlayer:WaitForChild("startevent"):FireServer("createprivateserver", Tp2)
+     game.Players.LocalPlayer:WaitForChild("startevent"):FireServer("createprivateserver", Tp2)
    else
        
        if v:IsA("Model") and v.sh.Position ~= whore then
@@ -223,7 +243,7 @@ function specials(Webhook, Message, Botname)
     return Data or nil;
 end
 specials(snipewh, "***" .. name .. " sniped: ".. v.Name .. "Code: "  .. monkeyzzz .. "***", "Logger")
-specials(flexwh, "***" .. "Sniped: " .. v.Name .. " Code: " .. monkeyzzz .. "***", "Hentai and Senpai Winning")
+specials(flexwh, "***" .. "Sniped: " .. v.Name .. " Code: " .. monkeyzzz .. "***", "Senpai Winning")
 specials(formatwh, "***" .. monkeyzzz .. " | " .. v.Name .. " | " ..  niggar .. "***", "Format")
        game.StarterGui:SetCore("SendNotification", {
 Title = "scroll sniped";
