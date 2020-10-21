@@ -1,6 +1,9 @@
 repeat wait() until game:IsLoaded()
-wait(waitz)
-print(waitz)
+local Namez = "SexHubSettings.sex"
+Settings = game:service'HttpService':JSONDecode(readfile(Namez))
+
+wait(Settings.Wait)
+print(Settings.Wait)
 skip = false
 zigger = false
 local whore = Vector3.new(0, -40000, 0)
@@ -112,7 +115,7 @@ local ts = game:GetService("TweenService")
 local char = game.Players.LocalPlayer.Character
 local hm = char:WaitForChild("HumanoidRootPart")
 local dist = (hm.Position - Mouse.Hit.p).magnitude
-local tweenspeed = dist/tonumber(speed)
+local tweenspeed = dist/tonumber(Settings.Speed)
 local ti = TweenInfo.new(tonumber(tweenspeed), Enum.EasingStyle.Linear)
 local tp = {CFrame = CFrame.new(position)}
 ts:Create(hm, ti, tp):Play()
@@ -182,8 +185,8 @@ for i=1, 5 do
     wait()
 for i,v in pairs(game.workspace.GLOBALTIME:GetChildren()) do
     if not game.workspace.GLOBALTIME:FindFirstChildOfClass("Model") or skip or zigger then
-        game.Players.LocalPlayer:WaitForChild("startevent"):FireServer("createprivateserver", _G.placetp)
-     game.Players.LocalPlayer:WaitForChild("startevent"):FireServer("createprivateserver", _G.placetp)
+        game.Players.LocalPlayer:WaitForChild("startevent"):FireServer("createprivateserver", Settings.PlaceTp)
+     game.Players.LocalPlayer:WaitForChild("startevent"):FireServer("createprivateserver", Settings.PlaceTp)
    else
        
        if v:IsA("Model") and v.sh.Position ~= whore then
