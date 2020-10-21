@@ -1,4 +1,4 @@
-local farm 		= "leaf"		--"leaf", "sand", "cloud", "mist", "rock", "rain", "forest", "akatsuki", "training"
+local farm 		= "forest"		--"leaf", "sand", "cloud", "mist", "rock", "rain", "forest", "akatsuki", "training"
 local SkipOwned = false			--false or true
 
 -------------------EDIT-------------------
