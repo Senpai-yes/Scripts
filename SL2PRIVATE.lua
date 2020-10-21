@@ -27,6 +27,7 @@ Tp2 = "5431071837"
 Tp2 = "5431069982"
 	elseif Settings.PlaceTp == "rain" then
 Tp2 = "5084678830"
+end
 local whore = Vector3.new(0, -40000, 0)
 local bodyvelocityenabled = true -- set this to false if you are getting kicked
 niggar = "nil"
