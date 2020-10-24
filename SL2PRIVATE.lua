@@ -225,6 +225,12 @@ for i,v in pairs(game.workspace.GLOBALTIME:GetChildren()) do
        To(v.sh.Position)
 				wait(1)
        JINKILL()
+	local pos = v.sh.Position
+	workspace.CurrentCamera.CFrame = CFrame.new(workspace.CurrentCamera.CFrame.Position,pos)
+	game.Players.LocalPlayer.Character.combat.update:FireServer("mouse1", true)
+	game.Players.LocalPlayer.Character.combat.update:FireServer("mouse1", false)
+	game.Players.LocalPlayer.Character.combat.update:FireServer("mouse1", true)
+	game.Players.LocalPlayer.Character.combat.update:FireServer("mouse1", false)
        fireclickdetector(v.sh.ClickDetector)
 	fireclickdetector(v.sh.ClickDetector)
 	fireclickdetector(v.sh.ClickDetector)
