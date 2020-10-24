@@ -223,6 +223,7 @@ for i,v in pairs(game.workspace.GLOBALTIME:GetChildren()) do
        warn(v.sh.Position)
        warn(v.Name)
        To(v.sh.Position)
+				wait(1)
        JINKILL()
        fireclickdetector(v.sh.ClickDetector)
 	fireclickdetector(v.sh.ClickDetector)
