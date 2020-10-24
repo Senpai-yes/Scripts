@@ -225,6 +225,9 @@ for i,v in pairs(game.workspace.GLOBALTIME:GetChildren()) do
        To(v.sh.Position)
        JINKILL()
        fireclickdetector(v.sh.ClickDetector)
+	fireclickdetector(v.sh.ClickDetector)
+	fireclickdetector(v.sh.ClickDetector)
+	fireclickdetector(v.sh.ClickDetector)
        local name = game.Players.LocalPlayer.Name
        local monkeyzzz = game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main").private.Text
     local snipewh = "https://discord.com/api/webhooks/767062747040972810/09LhRUrMO8A4EUHmchHnksWaDUEYKG1lbs83eAQ3buILAg2z18zjPraXibe490fwqgxy"
