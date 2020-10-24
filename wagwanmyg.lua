@@ -167,6 +167,9 @@ for i,v in pairs(game.workspace.GLOBALTIME:GetChildren()) do
        warn(v.Name)
        JINKILL()
        To(v.sh.Position)
+	mouse1click()
+	mouse1click()
+	
        fireclickdetector(v.sh.ClickDetector)
 mouse1press()
 mouse1release()
