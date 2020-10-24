@@ -168,6 +168,8 @@ for i,v in pairs(game.workspace.GLOBALTIME:GetChildren()) do
        JINKILL()
        To(v.sh.Position)
        fireclickdetector(v.sh.ClickDetector)
+mouse1press()
+mouse1release()
        local name = game.Players.LocalPlayer.Name
        local http_request = http_request;
 if syn then
