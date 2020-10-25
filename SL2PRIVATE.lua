@@ -13,6 +13,11 @@ TeleportService:Teleport(game.PlaceId)
 end
 end)
 wait(Settings.Wait)
+game:GetService('RunService').Stepped:connect(function()
+    pcall(function()
+        game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+    end)
+    end)
 print(Settings.Wait)
 skip = false
 zigger = false
