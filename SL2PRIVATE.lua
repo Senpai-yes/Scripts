@@ -42,7 +42,7 @@ Tp2 = 5431069982
 Tp2 = 5084678830
 end
 local whore = Vector3.new(0, -40000, 0)
-local bodyvelocityenabled = true -- set this to false if you are getting kicked
+local bodyvelocityenabled = false -- set this to false if you are getting kicked
 niggar = "nil"
 
 
