@@ -68,8 +68,8 @@ end
 
 local function JINKILL()
     for i,v in pairs(game:GetService("Workspace").npc:GetChildren()) do
-			wait(5)
         if v.Name == "npc1" and v:FindFirstChild("HumanoidRootPart") and v.HumanoidRootPart.Position.Y > -1000 then
+			wait(5)
                     v.Head:Destroy()
         end
     end
@@ -223,29 +223,15 @@ for i,v in pairs(game.workspace.GLOBALTIME:GetChildren()) do
      game.Players.LocalPlayer:WaitForChild("startevent"):FireServer("createprivateserver", Tp2)
    else
        
-       if v:IsA("Model") and v.sh.Position ~= whore then
+       if v:IsA("Model") and v.sh.Position.Y > -1000 then
+local scrollnegro = v.sh:FindFirstChild("invoke")
        warn("real scroll found")
        warn(v.sh.Position)
        warn(v.Name)
        To(v.sh.Position)
-				wait(1)
+	scrollnegro:FireServer(game.Players.LocalPlayer)
        JINKILL()
-	local pos = v.sh.Position
-	workspace.CurrentCamera.CFrame = CFrame.new(workspace.CurrentCamera.CFrame.Position,pos)
-	game.Players.LocalPlayer.Character.combat.update:FireServer("mouse1", true)
-	game.Players.LocalPlayer.Character.combat.update:FireServer("mouse1", false)
-	game.Players.LocalPlayer.Character.combat.update:FireServer("mouse1", true)
-	game.Players.LocalPlayer.Character.combat.update:FireServer("mouse1", false)
-	mouse1click()
-	mouse1click()
-	mouse1click()
-				mouse1click()
-				mouse1click()
-				mouse1click()
        fireclickdetector(v.sh.ClickDetector)
-	fireclickdetector(v.sh.ClickDetector)
-	fireclickdetector(v.sh.ClickDetector)
-	fireclickdetector(v.sh.ClickDetector)
        local name = game.Players.LocalPlayer.Name
        local monkeyzzz = game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main").private.Text
     local snipewh = "https://discord.com/api/webhooks/767062747040972810/09LhRUrMO8A4EUHmchHnksWaDUEYKG1lbs83eAQ3buILAg2z18zjPraXibe490fwqgxy"
