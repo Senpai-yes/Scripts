@@ -215,7 +215,7 @@ if Settings.Skippingss == true then
 	    end
 	end
 end
-for i=1, 5 do 
+for i=1, 3 do 
     wait()
 for i,v in pairs(game.workspace.GLOBALTIME:GetChildren()) do
     if not game.workspace.GLOBALTIME:FindFirstChildOfClass("Model") or skip or zigger then
