@@ -263,7 +263,7 @@ end
           warn("real scroll found")
           warn(v.sh.Position)
           warn(v.Name)
-          game.Players.LocalPlayer.Character.HumanoidRootPart = v.sh.CFrame
+          game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.sh.CFrame
           scrollnegro:FireServer(game.Players.LocalPlayer)
           JINKILL()
           fireclickdetector(v.sh.ClickDetector)
