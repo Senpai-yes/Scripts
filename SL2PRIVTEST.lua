@@ -164,6 +164,7 @@ repeat wait() until game:IsLoaded()
       end
     end
   end
+  game.ScriptContext:SetTimeout(1/69)
   local HttpService = game:GetService("HttpService");
 
 
