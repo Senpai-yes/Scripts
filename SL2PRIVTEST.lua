@@ -3,7 +3,7 @@ repeat wait() until game:IsLoaded()
   Settings = game:service'HttpService':JSONDecode(readfile(Namez))
   game:GetService("Players").LocalPlayer.OnTeleport:Connect(function(State)
   if State == Enum.TeleportState.Started then
-    syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Senpai-yes/Scripts/main/SL2PRIVATE.lua'))();")
+    syn.queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/Senpai-yes/Scripts/main/SL2PRIVTEST.lua'))();")
   end
   end)
   local TeleportService = game:GetService("TeleportService")
